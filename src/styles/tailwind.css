@@ -1,0 +1,153 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Background Colors */
+    --bg-primary: #000000;
+    --bg-secondary: #19161633;
+    --bg-accent-1: #3900f6;
+    --bg-accent-2: #3a01f6;
+    --bg-overlay-1: #80d9e14c;
+    --bg-overlay-2: #8280e1;
+    --bg-overlay-3: #8983834c;
+    --bg-purple: #8d76d9;
+    --bg-gray-1: #93919a;
+    --bg-gray-2: #c7cbe1;
+    --bg-gray-3: #cdcccc82;
+    --bg-light-1: #efefef;
+    --bg-light-2: #f4f4f4;
+    --bg-light-3: #f5f8ff;
+    --bg-light-4: #f7f9f9;
+    --bg-light-5: #faf9fb;
+    --bg-light-6: #fbfbff;
+    --bg-white: #ffffff;
+
+    /* Text Colors */
+    --text-primary: #000000;
+    --text-dark-1: #04070d;
+    --text-dark-2: #0c0c0c;
+    --text-success: #21cd49;
+    --text-dark-3: #252432;
+    --text-blue: #2aabee;
+    --text-dark-4: #2b2a35;
+    --text-green: #57bf12;
+    --text-muted-1: #75738c;
+    --text-muted-2: #759aa8;
+    --text-muted-3: #8987a1;
+    --text-accent: #daa0ac;
+    --text-white: #ffffff;
+
+    /* Button Colors */
+    --button-bg: #000000b7;
+    --button-text: #f6f6f6;
+  }
+}
+
+@layer utilities {
+  /* Background Colors */
+  .bg-primary {
+    background-color: var(--bg-primary);
+  }
+  .bg-secondary {
+    background-color: var(--bg-secondary);
+  }
+  .bg-accent-1 {
+    background-color: var(--bg-accent-1);
+  }
+  .bg-accent-2 {
+    background-color: var(--bg-accent-2);
+  }
+  .bg-overlay-1 {
+    background-color: var(--bg-overlay-1);
+  }
+  .bg-overlay-2 {
+    background-color: var(--bg-overlay-2);
+  }
+  .bg-overlay-3 {
+    background-color: var(--bg-overlay-3);
+  }
+  .bg-purple {
+    background-color: var(--bg-purple);
+  }
+  .bg-gray-1 {
+    background-color: var(--bg-gray-1);
+  }
+  .bg-gray-2 {
+    background-color: var(--bg-gray-2);
+  }
+  .bg-gray-3 {
+    background-color: var(--bg-gray-3);
+  }
+  .bg-light-1 {
+    background-color: var(--bg-light-1);
+  }
+  .bg-light-2 {
+    background-color: var(--bg-light-2);
+  }
+  .bg-light-3 {
+    background-color: var(--bg-light-3);
+  }
+  .bg-light-4 {
+    background-color: var(--bg-light-4);
+  }
+  .bg-light-5 {
+    background-color: var(--bg-light-5);
+  }
+  .bg-light-6 {
+    background-color: var(--bg-light-6);
+  }
+  .bg-white {
+    background-color: var(--bg-white);
+  }
+
+  /* Text Colors */
+  .text-primary {
+    color: var(--text-primary);
+  }
+  .text-dark-1 {
+    color: var(--text-dark-1);
+  }
+  .text-dark-2 {
+    color: var(--text-dark-2);
+  }
+  .text-success {
+    color: var(--text-success);
+  }
+  .text-dark-3 {
+    color: var(--text-dark-3);
+  }
+  .text-blue {
+    color: var(--text-blue);
+  }
+  .text-dark-4 {
+    color: var(--text-dark-4);
+  }
+  .text-green {
+    color: var(--text-green);
+  }
+  .text-muted-1 {
+    color: var(--text-muted-1);
+  }
+  .text-muted-2 {
+    color: var(--text-muted-2);
+  }
+  .text-muted-3 {
+    color: var(--text-muted-3);
+  }
+  .text-accent {
+    color: var(--text-accent);
+  }
+  .text-white {
+    color: var(--text-white);
+  }
+
+  /* Button Colors */
+  .bg-button {
+    background-color: var(--button-bg);
+  }
+  .text-button {
+    color: var(--button-text);
+  }
+}
