@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap');
+.application-section {
+  padding: 3rem 5rem;
+  font-family: 'Manrope', sans-serif;
+}
+
+.application-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.application-title {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 1;
+  text-align: center;
+  color: #111;
+  margin-bottom: 40px;
+}
+
+.application-form {
+  display: flex;
+  flex-direction: column;
+  width: 35rem;
+  gap: 1rem;
+}
+
+.form-label {
+  font-size: 16px;
+  font-weight: 600;
+  color: #111;
+  margin-bottom: 8px;
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 16px 20px;
+  font-size: 18px;
+  font-family: 'Manrope', sans-serif;
+  color: #666;
+  border: 1px solid #d6ddec;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.form-input {
+  height: 70px;
+}
+
+.form-textarea {
+  height: 114px;
+  resize: none;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  border-color: #3900f6;
+}
+
+.form-button {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Manrope', sans-serif;
+  padding: 16px 20px;
+  background-color: #3900f6;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.form-button:hover {
+  background-color: #3900f6;
+}

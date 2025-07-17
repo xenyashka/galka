@@ -11,12 +11,12 @@
     "format": "prettier --write \"src/**/*.{js,jsx,css,md,json}\""
   },
   "dependencies": {
+    "@dhiwise/component-tagger": "^1.0.9",
+    "@tailwindcss/typography": "^0.5.16",
+    "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "prop-types": "^15.8.1",
-    "react-router-dom": "6.0.2",
-    "@dhiwise/component-tagger": "^1.0.9",
-    "@tailwindcss/typography": "^0.5.16"
+    "react-router-dom": "6.0.2"
   },
   "devDependencies": {
     "@types/react": "^18.2.45",
@@ -25,7 +25,7 @@
     "autoprefixer": "10.4.2",
     "globals": "^15.15.0",
     "postcss": "8.4.8",
-    "prettier": "^3.5.3",
+    "prettier": "^3.6.2",
     "tailwindcss": "3.4.6",
     "vite": "5.0.0"
   }

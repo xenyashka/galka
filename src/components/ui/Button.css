@@ -1,0 +1,53 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 16px;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  gap: 0.5rem;
+}
+
+.button--small {
+  padding: 8px 16px;
+  font-size: 14px;
+  height: 40px;
+}
+
+.button--medium {
+  padding: 12px 24px;
+  font-size: 16px;
+  height: 48px;
+}
+
+.button--large {
+  padding: 16px 32px;
+  font-size: 18px;
+  height: 56px;
+}
+
+.button--theme-dark {
+  background-color: #000000;
+  opacity: 0.8;
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.button--theme-dark:hover:not(.button--disabled) {
+  opacity: 1;
+}
+
+.button--theme-light {
+  background-color: #ffffff;
+  color: #000000;
+  opacity: 0.8;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.button--theme-light:hover:not(.button--disabled) {
+  opacity: 1;
+}

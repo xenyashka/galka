@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap');
+.price-section {
+  padding: 0 5rem;
+  font-family: 'Manrope', sans-serif;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.section-title {
+  font-size: 60px;
+  font-weight: 600;
+  color: #111;
+}
+
+.title-icon {
+  width: 70px;
+  height: 70px;
+}
+
+.cards {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.action {
+  display: flex;
+  justify-content: center;
+  margin: 3rem 0;
+}
+
+.price-card {
+  background-color: #fbfbff;
+  border: 1px solid #e6e8f4;
+  border-radius: 16px;
+  padding: 2rem;
+  width: 22rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+.price-card:hover {
+  transform: translateY(-10px);
+}
+
+.price-card--highlighted {
+  border-color: #6f4ef2;
+  box-shadow: 0 8px 24px rgba(111, 78, 242, 0.2);
+}
+
+.price-card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+  gap: 1rem;
+}
+
+.price-card-title {
+  font-size: 46px;
+  font-weight: 500;
+  color: #111;
+}
+
+.price-card-icon {
+  width: 58px;
+  height: 58px;
+}
+
+.price-card-price {
+  font-size: 32px;
+  font-weight: 600;
+  color: #111;
+  text-align: center;
+  margin-top: 32px;
+}
+
+.feature-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 1rem;
+}
+
+.feature-item-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+}
+
+.feature-item-icon--default {
+  background-color: #93919a;
+}
+
+.feature-item-icon--accent {
+  background-color: #3900f6;
+}
+
+.feature-item-icon img {
+  width: 24px;
+  height: 24px;
+}
+
+.feature-item-text {
+  font-size: 18px;
+  color: #333;
+}

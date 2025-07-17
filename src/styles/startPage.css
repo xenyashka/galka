@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 1.5rem 5rem;
+  gap: 7rem;
+  background-image: url(/images/img_image.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 46px;
+  left: 0;
+  right: 0;
+  padding: 0 16px;
+}
+
+.navigation {
+  background: rgba(137, 132, 132, 0.3);
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  box-shadow: 0px 4px 200px -79px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(10px);
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-link {
+  color: #ffffff;
+  opacity: 0.8;
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 18px;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 3.5rem;
+  height: 3rem;
+}
+
+.logo-text {
+  color: white;
+  font-family: 'Manrope', sans-serif;
+  font-size: 35px;
+  font-weight: 300;
+  line-height: 48px;
+  margin-left: 16px;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 60rem;
+}
+
+.main-title {
+  color: white;
+  font-family: 'Manrope', sans-serif;
+  font-size: 84px;
+  font-weight: 600;
+  line-height: 84px;
+  letter-spacing: 1px;
+}
+
+.description {
+  color: white;
+  font-family: 'Manrope', sans-serif;
+  font-size: 24px;
+  line-height: 32px;
+  max-width: 724px;
+}
+
+.button-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.badge-container {
+  display: flex;
+  align-items: center;
+}
+
+.badge-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+
+.badge-text {
+  color: #your-green-color; /* Замените на ваш зелёный цвет */
+  font-family: 'Manrope', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.users {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.companies {
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+}
+
+.users-title {
+  color: white;
+  font-family: 'Manrope', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+}
