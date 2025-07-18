@@ -1,28 +1,23 @@
-import { useState } from 'react';
+import React from 'react';
+import { useForm, ValidationError } from '@formspree/react';
 import Button from '../../components/ui/Button';
 import '../../styles/application.css';
 
 const Application = () => {
-  const [formData, setFormData] = useState({
-    email: '',
-    name: '',
-    comment: '',
-  });
+  const [state, handleSubmit] = useForm('myzpznzw');
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log('Form submitted:', formData);
-    alert('Заявка отправлена успешно!');
-    setFormData({ email: '', name: '', comment: '' });
-  };
-
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({
-      ...prev,
-      [name]: value,
-    }));
-  };
+  if (state.succeeded) {
+    return (
+      <div className="application-section">
+        <div className="application-container">
+          <h2 className="application-title">Заявка отправлена!</h2>
+          <p className="application-success-message">
+            Спасибо! Мы получили вашу заявку и свяжемся с вами в ближайшее время.
+          </p>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div id="contact" className="application-section">
@@ -32,41 +27,39 @@ const Application = () => {
         <form onSubmit={handleSubmit} className="application-form">
           <div className="form-group">
             <label className="form-label">Email *</label>
-            <input
-              type="email"
-              name="email"
-              value={formData.email}
-              onChange={handleInputChange}
-              required
-              className="form-input"
+            <input type="email" name="email" id="email" required className="form-input" />
+            <ValidationError
+              prefix="Email"
+              field="email"
+              errors={state.errors}
+              className="form-error"
             />
           </div>
 
           <div className="form-group">
             <label className="form-label">Имя *</label>
-            <input
-              type="text"
-              name="name"
-              value={formData.name}
-              onChange={handleInputChange}
-              required
-              className="form-input"
+            <input type="text" name="name" id="name" required className="form-input" />
+            <ValidationError
+              prefix="Name"
+              field="name"
+              errors={state.errors}
+              className="form-error"
             />
           </div>
 
           <div className="form-group">
             <label className="form-label">Комментарий</label>
-            <textarea
-              name="comment"
-              value={formData.comment}
-              onChange={handleInputChange}
-              rows={4}
-              className="form-textarea"
+            <textarea name="comment" id="comment" rows={4} className="form-textarea" />
+            <ValidationError
+              prefix="Comment"
+              field="comment"
+              errors={state.errors}
+              className="form-error"
             />
           </div>
 
-          <Button type="submit" className="form-button">
-            Отправить
+          <Button type="submit" className="form-button" disabled={state.submitting}>
+            {state.submitting ? 'Отправка...' : 'Отправить'}
           </Button>
         </form>
       </div>
