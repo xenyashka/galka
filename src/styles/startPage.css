@@ -6,7 +6,7 @@
   flex-direction: column;
   flex-grow: 1;
   padding: 1.5rem 5rem;
-  gap: 7rem;
+  gap: 6rem;
   background-image: url(/images/img_image.png);
   background-size: cover;
   background-position: center;
@@ -14,19 +14,33 @@
 
 .header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  top: 46px;
-  left: 0;
-  right: 0;
-  padding: 0 16px;
+  justify-content: space-between;
+  padding: 0 1rem;
+  position: relative;
+}
+
+.header-left {
+  flex: 1;
+}
+
+.header-center {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+}
+
+.header-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .navigation {
   background: rgba(137, 132, 132, 0.3);
   border-radius: 8px;
   padding: 0.5rem 1rem;
-  box-shadow: 0px 4px 200px -79px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0.25rem 12.5rem -5rem rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(10px);
   display: flex;
   gap: 1.5rem;
@@ -36,13 +50,14 @@
   color: #ffffff;
   opacity: 0.8;
   font-family: 'Montserrat', sans-serif !important;
-  font-size: 18px;
+  font-size: 1.125rem;
   text-decoration: none;
   letter-spacing: 0.02em;
+  transition: opacity 0.3s ease;
+}
 
-  &:hover {
-    opacity: 1;
-  }
+.nav-link:hover {
+  opacity: 1;
 }
 
 .logo-container {
@@ -58,10 +73,10 @@
 .logo-text {
   color: white;
   font-family: 'Manrope', sans-serif;
-  font-size: 35px;
+  font-size: 2.2rem;
   font-weight: 300;
-  line-height: 48px;
-  margin-left: 16px;
+  line-height: 3rem;
+  margin-left: 1rem;
 }
 
 .main-content {
@@ -74,40 +89,47 @@
 .main-title {
   color: white;
   font-family: 'Manrope', sans-serif;
-  font-size: 84px;
+  font-size: 5.25rem;
   font-weight: 600;
-  line-height: 84px;
+  line-height: 5.25rem;
   letter-spacing: 1px;
 }
 
 .description {
   color: white;
   font-family: 'Manrope', sans-serif;
-  font-size: 24px;
-  line-height: 32px;
-  max-width: 724px;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  max-width: 45.25rem;
 }
 
 .button-container {
   display: flex;
   gap: 1rem;
 }
+.button-icon {
+  width: 1rem;
+}
 
 .badge-container {
   display: flex;
   align-items: center;
+  gap: 0.5rem;
+  font-family: 'Manrope', sans-serif;
+  font-size: 1.5rem;
+  padding: 0.5rem;
 }
 
 .badge-icon {
-  width: 16px;
-  height: 16px;
-  margin-right: 8px;
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.5rem;
 }
 
 .badge-text {
-  color: #your-green-color; /* Замените на ваш зелёный цвет */
+  color: #58bf13;
   font-family: 'Manrope', sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
 }
 
@@ -116,19 +138,66 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 16px;
-}
-
-.companies {
-  display: flex;
-  gap: 5rem;
-  align-items: center;
+  gap: 1rem;
 }
 
 .users-title {
   color: white;
   font-family: 'Manrope', sans-serif;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 500;
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  .main-container {
+    padding: 1rem;
+    gap: 3rem;
+  }
+  .header {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .header-center {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .navigation {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    padding: 0.5rem;
+  }
+  .nav-link {
+    font-size: 0.75rem;
+  }
+  .main-title {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+  .description {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+  .primary-button {
+    width: 100%;
+  }
+  .button-container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 1rem;
+  }
+  .badge-container {
+    justify-content: center;
+  }
+  .main-content {
+    align-items: center;
+    text-align: center;
+  }
+  .main-container {
+    background-size: cover;
+    background-position: center;
+  }
 }

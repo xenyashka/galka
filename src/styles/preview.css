@@ -5,3 +5,9 @@
   flex-grow: 1;
   height: 70rem;
 }
+
+@media (max-width: 768px) {
+  .preview-container {
+    display: none;
+  }
+}

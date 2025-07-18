@@ -23,53 +23,59 @@ const StartPage = () => {
     <div>
       <div className="main-container">
         <div className="header">
-          <div className="logo-container">
-            <img src="/images/logo_white.svg" alt="Галка Logo" className="logo" />
-            <h1 className="logo-text">Галка</h1>
+          <div className="header-left">
+            <div className="logo-container">
+              <img src="/images/logo_white.svg" alt="Галка Logo" className="logo" />
+              <h1 className="logo-text">Галка</h1>
+            </div>
           </div>
 
-          <nav className="navigation">
-            <a
-              href="#features"
-              onClick={(e) => {
-                e.preventDefault();
-                smoothScrollTo('features');
-              }}
-              className="nav-link"
-            >
-              Возможности
-            </a>
-            <a
-              href="#pricing"
-              onClick={(e) => {
-                e.preventDefault();
-                smoothScrollTo('pricing');
-              }}
-              className="nav-link"
-            >
-              Тарифы
-            </a>
-            <a
-              href="#blog"
-              onClick={(e) => {
-                e.preventDefault();
-                smoothScrollTo('blog');
-              }}
-              className="nav-link"
-            >
-              Блог
-            </a>
-            <a
-              href="#contact"
-              onClick={(e) => {
-                e.preventDefault();
-                smoothScrollTo('contact');
-              }}
-              className="nav-link"
-            >
-              Контакты
-            </a>
-          </nav>
+          <div className="header-center">
+            <nav className="navigation">
+              <a
+                href="#features"
+                onClick={(e) => {
+                  e.preventDefault();
+                  smoothScrollTo('features');
+                }}
+                className="nav-link"
+              >
+                Возможности
+              </a>
+              <a
+                href="#pricing"
+                onClick={(e) => {
+                  e.preventDefault();
+                  smoothScrollTo('pricing');
+                }}
+                className="nav-link"
+              >
+                Тарифы
+              </a>
+              <a
+                href="#blog"
+                onClick={(e) => {
+                  e.preventDefault();
+                  smoothScrollTo('blog');
+                }}
+                className="nav-link"
+              >
+                Блог
+              </a>
+              <a
+                href="#contact"
+                onClick={(e) => {
+                  e.preventDefault();
+                  smoothScrollTo('contact');
+                }}
+                className="nav-link"
+              >
+                Контакты
+              </a>
+            </nav>
+          </div>
+
+          <div className="header-right"></div>
         </div>
 
         <div className="main-content">
@@ -80,31 +86,35 @@ const StartPage = () => {
           </p>
 
           <div className="button-container">
+            <div>
+              <Button
+                variant="primary"
+                theme="dark"
+                onClick={handleTryFree}
+                className="white-button"
+              >
+                Попробовать бесплатно
+              </Button>
+              <div className="badge-container">
+                <img src="/images/img_vector.svg" alt="Без привязки карты" />
+                <span className="badge-text">Без привязки карты</span>
+              </div>
+            </div>
             <Button
-              variant="primary"
-              theme="dark"
+              variant="secondary"
+              theme="light"
               onClick={handleDemoRequest}
               className="primary-button"
             >
               Посмотреть демо
-              <img src="/images/img_arrow_1.svg" />
-            </Button>
-            <Button
-              variant="secondary"
-              theme="light"
-              onClick={handleTryFree}
-              className="white-button"
-            >
-              Попробовать бесплатно
+              <img className="button-icon" src="/images/img_arrow_4.svg" />
             </Button>
           </div>
         </div>
-
         <div className="users">
           <p className="users-title">Галка уже кружит над:</p>
           <div className="companies">
-            <img src="/images/img_image_42.png" alt="Company 1" className="company-logo" />
-            <img src="/images/img_image_41.png" alt="Company 2" className="company-logo" />
+            <img src="/images/companies_logos.svg" />
           </div>
         </div>
       </div>

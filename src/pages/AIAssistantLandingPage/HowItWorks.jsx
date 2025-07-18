@@ -76,66 +76,68 @@ const HowItWorks = () => {
           <h2 className="section-title">Как это работает?</h2>
 
           <div className="process-grid">
-            <div className="process-left">
-              <div className="process-item">
-                <img className="point" src="/images/number_1.svg" />
-                <div className="process-content">
-                  <h3 className="process-title">Запустите Галку перед встречей</h3>
-                  <p className="process-text">
-                    Сервис подключается к телефонии или легко встраивается в Zoom, Телемост и другие
-                    платформы
-                  </p>
-                  <div className="note-box">
-                    Можно загрузить ваши файлы, документы и базу знаний прямо в сервис для более
-                    точных и контекстных ответов
-                  </div>
+            <div className="process-item">
+              <img className="point" src="/images/number_1.svg" />
+              <div className="process-content">
+                <h3 className="process-title">Запустите Галку перед встречей</h3>
+                <p className="process-text">
+                  Сервис подключается к телефонии или легко встраивается в Zoom, Телемост и другие
+                  платформы
+                </p>
+                <div className="note-box">
+                  Можно загрузить ваши файлы, документы и базу знаний прямо в сервис для более
+                  точных и контекстных ответов
                 </div>
-                <img src="/images/img_image_47.png" alt="Setup" className="process-image" />
               </div>
+              <img src="/images/img_image_47.png" alt="Setup" className="process-image" />
+            </div>
 
-              <div className="process-item">
-                <img className="point" src="/images/number_2.svg" />
-                <div className="process-content">
-                  <h3 className="process-title">Получайте подсказки в моменте</h3>
-                  <p className="process-text">
-                    Галка генерирует нужные фразы и информацию с помощью искусственного интеллекта,
-                    расшифровывая речь на звонке менее чем за 3 секунды
-                  </p>
-                </div>
+            <div className="process-item">
+              <img className="point" src="/images/number_2.svg" />
+              <div className="process-content">
+                <h3 className="process-title">Получайте подсказки в моменте</h3>
+                <p className="process-text">
+                  Галка генерирует нужные фразы и информацию с помощью искусственного интеллекта,
+                  расшифровывая речь на звонке менее чем за 3 секунды
+                </p>
               </div>
             </div>
 
-            <div className="process-right">
-              <div className="process-item">
-                <img className="point" src="/images/number_3.svg" />
-                <div className="process-content">
-                  <h3 className="process-title">Смотрите отчёт после встречи</h3>
-                  <p className="process-text">
-                    Сервис разбирает звонок на ключевые блоки и помогает понять, где можно говорить
-                    эффективнее
-                  </p>
-                </div>
+            <div className="process-item">
+              <img className="point" src="/images/number_3.svg" />
+              <div className="process-content">
+                <h3 className="process-title">Смотрите отчёт после встречи</h3>
+                <p className="process-text">
+                  Сервис разбирает звонок на ключевые блоки и помогает понять, где можно говорить
+                  эффективнее
+                </p>
               </div>
+            </div>
 
-              <div className="process-item">
-                <img className="point" src="/images/number_4.svg" />
-                <div className="process-content">
-                  <h3 className="process-title">Подстраивайте под себя</h3>
-                  <p className="process-text">
-                    Ассистент адаптирует подсказки и выводы под ваш бизнес, анализируя предыдущие
-                    встречи, новые материалы и задачи
-                  </p>
-                </div>
+            <div className="process-item">
+              <img className="point" src="/images/number_4.svg" />
+              <div className="process-content">
+                <h3 className="process-title">Подстраивайте под себя</h3>
+                <p className="process-text">
+                  Ассистент адаптирует подсказки и выводы под ваш бизнес, анализируя предыдущие
+                  встречи, новые материалы и задачи
+                </p>
               </div>
             </div>
           </div>
 
           <div className="action-buttons">
-            <Button onClick={handleTryFree} variant="primary">
+            <Button onClick={handleTryFree} variant="primary" theme="dark">
               Оставить заявку
             </Button>
-            <Button onClick={handleDemoRequest} variant="secondary">
-              Запросить демо
+            <Button
+              variant="secondary"
+              theme="light"
+              onClick={handleDemoRequest}
+              className="primary-button"
+            >
+              Посмотреть демо
+              <img className="button-icon" src="/images/img_arrow_4.svg" />
             </Button>
           </div>
         </div>

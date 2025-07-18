@@ -27,7 +27,14 @@ const Application = () => {
         <form onSubmit={handleSubmit} className="application-form">
           <div className="form-group">
             <label className="form-label">Email *</label>
-            <input type="email" name="email" id="email" required className="form-input" />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              required
+              className="form-input"
+              placeholder="example@email.com"
+            />
             <ValidationError
               prefix="Email"
               field="email"
@@ -38,7 +45,14 @@ const Application = () => {
 
           <div className="form-group">
             <label className="form-label">Имя *</label>
-            <input type="text" name="name" id="name" required className="form-input" />
+            <input
+              type="text"
+              name="name"
+              id="name"
+              required
+              className="form-input"
+              placeholder="Галина Галкина"
+            />
             <ValidationError
               prefix="Name"
               field="name"
@@ -49,7 +63,13 @@ const Application = () => {
 
           <div className="form-group">
             <label className="form-label">Комментарий</label>
-            <textarea name="comment" id="comment" rows={4} className="form-textarea" />
+            <textarea
+              name="comment"
+              id="comment"
+              rows={4}
+              className="form-textarea"
+              placeholder="Галка на хвосте принесла, что"
+            />
             <ValidationError
               prefix="Comment"
               field="comment"

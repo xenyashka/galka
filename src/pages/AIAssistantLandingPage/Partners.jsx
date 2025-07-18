@@ -2,37 +2,6 @@ import React from 'react';
 import '../../styles/partners.css';
 
 const Partners = () => {
-  const tags = [
-    {
-      text: 'Уверенная коммуникация',
-      gradient: 'linear-gradient(to right, #e9edf0, #c5b9ff)',
-    },
-    {
-      text: 'ИИ в продажах',
-      gradient: 'linear-gradient(to right, #e3d0ee, #e9d6e7)',
-    },
-    {
-      text: 'Оценка звонков',
-      gradient: 'linear-gradient(to right, #b3d7fe, #e9d6e7)',
-    },
-    {
-      text: 'Анализ диалога',
-      gradient: 'linear-gradient(to right, #f4eaf9, #f9f9f9)',
-    },
-    {
-      text: 'Переговоры',
-      gradient: 'linear-gradient(to right, #b3feed, #e9d6e7)',
-    },
-    {
-      text: 'Обработка возражений',
-      gradient: 'linear-gradient(to right, #baffc4, #eeffe9)',
-    },
-    {
-      text: 'Win-win решения',
-      gradient: 'linear-gradient(to right, #b3d7fe, #e9d6e7)',
-    },
-  ];
-
   const partnerCards = [
     {
       title: 'Telegram-канал',
@@ -72,18 +41,9 @@ const Partners = () => {
           Статьи, гайды и подборки — контент, который помогает прокачивать навыки общения и продаж
         </p>
 
-        {/* Topic Tags */}
-        <div className="topic-tags">
-          {tags.map((tag, index) => (
-            <div key={index} className="tag" style={{ background: tag.gradient }}>
-              {tag.text}
-            </div>
-          ))}
-        </div>
-
         {/* Partner Cards */}
         <div className="partners-container">
-          <img src="/images/competences.svg" />
+          <img className="competencies" src="/images/competences.svg" />
           <div className="partner-cards">
             {partnerCards.map((card, index) => (
               <div className="partner-card" key={index}>
